@@ -13,7 +13,11 @@ class Student
   end
 
   def self.creates
-
+    TABLE CREATE (
+      id INT PRIMARY KEY,
+      name TEXT,
+      grade INT
+    );
   end
 
   def save
