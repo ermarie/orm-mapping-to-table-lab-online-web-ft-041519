@@ -10,4 +10,12 @@ class Student
     @grade = grade
   end
 
+  def self.creates
+
+  end
+
+  def save
+
+  end
+
 end
