@@ -13,17 +13,16 @@ class Student
   end
 
   def self.create
-  sql =  <<-SQL
-    CREATE TABLE IF NOT EXISTS songs (
-      id INTEGER PRIMARY KEY,
-      name TEXT,
-      grade INT
-      )
-      SQL
-  DB[:conn].execute(sql)
-end
-  def save
-
+    sql =  <<-SQL
+      CREATE TABLE IF NOT EXISTS songs (
+        id INTEGER PRIMARY KEY,
+        name TEXT,
+        grade INT
+        )
+        SQL
+    DB[:conn].execute(sql)
   end
+
+  
 
 end
